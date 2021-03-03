@@ -3,7 +3,7 @@
 ## Developer: TJ Simms
 
 ### Links and Resources
-- [Heroku Server](https://basic-express-server-ts.herokuapp.com/)
+- [Heroku Server](https://basic-api-server-ts.herokuapp.com/)
 -
 
 
