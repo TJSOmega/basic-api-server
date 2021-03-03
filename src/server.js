@@ -14,8 +14,11 @@ app.use(express.json());
 const notFound = require('./src/error-handlers/404.js')
 const erros = require('./src/error-handlers/500.js')
 const logger = require('./src/middleware/logger.js')
+const animalRoutes = require('./routes/animals.js')
+const sodaRoutes = require('./routes/soda.js')
 
-
+app.use(animalRoutes)
+app.use(sodaRoutes)
 
 //Errors
 app.use('*', notFound)

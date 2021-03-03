@@ -3,7 +3,6 @@ class ModelHandle {
   constructor() {
     this.id = 0;
     this.db = []
-    this.fields = []
   }
 
   // Goes in and looks for a single item in the database through an ID search
@@ -29,6 +28,8 @@ class ModelHandle {
     return record;
   }
 
+  
+ // Added from the Demo wrote myself though
   update(id, obj) {
     if (id) {
       this.db = this.db.map(record => {
