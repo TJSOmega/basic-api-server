@@ -22,7 +22,7 @@ app.use(sodaRoutes)
 
 
 function homeRoute(req,res) {
-  res.send('Welcome to my Basic-API-App!!!! Change 5 this time we got it!!')
+  res.send('Welcome to my Basic-API-App!!!! Change 6 lets see if it works!!')
 }
 
 //Errors
