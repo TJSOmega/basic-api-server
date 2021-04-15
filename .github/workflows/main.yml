@@ -37,4 +37,14 @@ jobs:
           
       - name: Beanstalk Deploy
         uses: einaregilsson/beanstalk-deploy@v16
+        
+      - name: Deploy to EB
+        uses: einaregilsson/beanstalk-deploy@v16
+        with:
+         aws_access_key: AKIARBO6UVKMQF5ESDOX
+         aws_secret_key: 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
+         application_name: basic-api-server
+         environment_name: basic-api-server-dev
+         version_label: app-f56d-210414_213218-1
+         region: us-west-1
 
