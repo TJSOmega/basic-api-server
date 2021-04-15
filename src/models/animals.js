@@ -5,7 +5,7 @@ const MainCollection = require('./main.js')
 class Animals extends MainCollection {
 
   constructor() {
-    super(id, db)
+    super (0, [])
     this.fields = ['name', 'type', 'age'];
   }
   

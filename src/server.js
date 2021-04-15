@@ -11,14 +11,19 @@ const app = express()
 app.use(express.json());
 
 // internal modules
-const notFound = require('./src/error-handlers/404.js')
-const erros = require('./src/error-handlers/500.js')
-const logger = require('./src/middleware/logger.js')
+const notFound = require('./error-handlers/404.js')
+const errors = require('./error-handlers/500.js')
+const logger = require('./middleware/logger.js')
 const animalRoutes = require('./routes/animals.js')
 const sodaRoutes = require('./routes/soda.js')
-
+app.get('/' homeRoute)
 app.use(animalRoutes)
 app.use(sodaRoutes)
+
+
+function homeRoute(req,res) {
+  res.send('Welcome to my Basic-API-App!')
+}
 
 //Errors
 app.use('*', notFound)

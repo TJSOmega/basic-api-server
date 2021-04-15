@@ -3,7 +3,7 @@ const MainCollection = require('./main.js')
 class Soda extends MainCollection {
 
   constructor() {
-    super(id, db)
+    super (0, [])
     this.fields = ['name', 'flavor', 'color'];
   }
   

@@ -7,7 +7,7 @@ const soda = new Soda()
 const router = express.Router();
 
 
-router.get('/soda', getSoda)
+router.get('/soda', getOneSoda)
 router.get('/soda/:id', getOneSoda)
 router.post('/soda', createSoda)
 router.put('/soda/:id', updateSoda)
@@ -42,6 +42,10 @@ function deleteSoda(req,res) {
   const id =parseInt(req.params.id);
   let deleteSoda = soda.delete(id)
   res.status(200).json(deleteSoda)
+}
+async function getSoda(req, res) {
+  let allSoda = await soda.get();
+  res.status(200).json(allSoda);
 }
 
 module.exports = router;

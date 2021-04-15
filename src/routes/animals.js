@@ -1,6 +1,7 @@
 const express = require ('express')
 
 const Animal = require('../models/animals.js')
+
 const animal = new Animal()
 
 
@@ -44,4 +45,6 @@ function deleteAnimal(req,res) {
   res.status(200).json(deleteAnimal)
 }
 
+
 module.exports = router;
+
