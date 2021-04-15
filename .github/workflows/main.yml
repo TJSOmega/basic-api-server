@@ -35,9 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: Beanstalk Deploy
-        uses: einaregilsson/beanstalk-deploy@v16
-        
+ 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v16
         with:
