@@ -16,7 +16,7 @@ const errors = require('./error-handlers/500.js')
 const logger = require('./middleware/logger.js')
 const animalRoutes = require('./routes/animals.js')
 const sodaRoutes = require('./routes/soda.js')
-app.get('/' homeRoute)
+app.get('/', homeRoute)
 app.use(animalRoutes)
 app.use(sodaRoutes)
 
